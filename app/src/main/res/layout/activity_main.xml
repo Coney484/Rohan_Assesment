@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2C3335"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textviewOne"
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/animatedBottomBar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_above="@id/one"
-        android:layout_marginBottom="303dp"
-        android:text="ROHAN ASSESMENT"
-        android:textColor="#000"
-        android:layout_marginHorizontal="10dp"
-        android:textSize="25sp"
-        android:paddingHorizontal="10dp"
-        />
-
-
-
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/one"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
+        app:abb_selectedTabType="text"
         android:background="@drawable/rounded_shape"
-        android:layout_marginHorizontal="10dp"
-        app:cnb_menuResource="@menu/menu_bottom"/>
+        app:abb_indicatorColor="#fff"
+        app:abb_indicatorHeight="4dp"
+        app:abb_indicatorLocation="bottom"
+        app:abb_indicatorMargin="16dp"
+        app:abb_rippleColor="#fff"
+        app:abb_tabColor="#000"
+        app:abb_selectedIndex="0"
+        app:abb_tabs="@menu/menu_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ROHAN ASSESMENT"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/animatedBottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
