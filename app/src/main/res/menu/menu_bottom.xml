@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+    android:id="@+id/Demo1"
+    android:title="Demo1"
+        android:icon="@drawable/ic_touch_app"
+    app:cnb_backgroundColor="#ff785b"
+    app:cnb_iconColor="#000"
+    app:cnb_textColor="#fff"
+    />
+
+    <item
+        android:id="@+id/Demo2"
+        android:title="Demo2"
+        android:icon="@drawable/ic_touch_app"
+        app:cnb_backgroundColor="#ff785b"
+        app:cnb_iconColor="#000"
+        app:cnb_textColor="#fff"
+        />
+
+    <item
+        android:id="@+id/Demo3"
+        android:title="Demo3"
+        android:icon="@drawable/ic_touch_app"
+        app:cnb_backgroundColor="#ff785b"
+        app:cnb_iconColor="#000"
+        app:cnb_textColor="#fff"
+        />
+</menu>
